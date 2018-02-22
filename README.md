@@ -1,6 +1,6 @@
 # PROJET-ABEILLE
 
-![image](https://www.google.fr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwiah77Z-rnZAhWB0xQKHQ-2Cv0QjRx6BAgAEAY&url=https%3A%2F%2Fwww.espritsante.com%2Farticles%2Feffondrement-colonies-abeilles-affole&psig=AOvVaw239rHhnLC_aD-89bhbs6Ir&ust=1519403881259337)
+![image](https://www.espritsante.com/images/0248103001340357281.jpg)
 
 
 ## Membres du groupe : ##
