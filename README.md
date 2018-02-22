@@ -1,4 +1,3 @@
-# PROJET-ABEILLE
 
 ![image](https://www.espritsante.com/images/0248103001340357281.jpg)
 
