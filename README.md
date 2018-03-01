@@ -1,7 +1,7 @@
 
 ![image](https://www.espritsante.com/images/0248103001340357281.jpg)
 
-###### Table des matières ######
+# Table des matières 
 - [Membre du groupe](#membres)  
 - [Description du projet ](#sujet)
 - [Modélisations mathématiques de la reproduction des abeilles](#doc_ref)  
@@ -14,7 +14,7 @@
 
 
 <a name="membres"/>
-###### Membres du groupe : ######
+# Membres du groupe :
 
 **LANOUNI sofia**  
 
@@ -25,13 +25,13 @@
 **LUBEK Lazare** 
 
 <a name="sujet"/>
-###### Description du projet : ######
+# Description du projet :
 
   Notre projet cherche à modéliser les effets de pesticides sur une colonie d'abeilles durant 6 mois. Lors de notre étude, nous allons voire comment modeliser la reproduction des abeilles et notamment l'évolution de la ponte d'oeufs. Ainsi lorsque l'on va simuler l'action du pesticides sur plusieurs colonies, nous allons pouvoir changer certain paramètre de reproduction et suivre les abeilles transgéniques résistantes aux pesticides néonicotinoïdes.
   
 
 <a name="doc_ref"/>
-###### Modélisations mathématiques de la reproduction des abeilles ######
+# Modélisations mathématiques de la reproduction des abeilles
 
   Dans une colonie d'abeilles, il y a entre 20 000 et 90 000 abeilles. 
   
