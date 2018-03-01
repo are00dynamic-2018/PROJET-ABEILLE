@@ -18,11 +18,11 @@
 <a name="membres"/>
 ## Membres du groupe : 
 
-**LANOUNI sofia    
+**LANOUNI sofia  **  
 
-**COHEN-SOLAL Roy 
+**COHEN-SOLAL Roy **
 
-**MALASIGNE Clément
+**MALASIGNE Clément**
 
 **LUBEK Lazare** 
 
