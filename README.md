@@ -18,6 +18,6 @@ LUBEK Lazare
 Notre projet cherche à modéliser les effets de pesticides sur une colonie d'abeilles durant 6 mois.
 
 
-![code]()
+
 
 
