@@ -9,7 +9,7 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 - [Modélisations mathématiques de la reproduction des abeilles](#doc_ref)  
   - [Suite Fibonacci ](#Fibonacci)
   
--[Bibliographie](#Bibliographie)
+- [Bibliographie](#Bibliographie)
 
 <a name="membres"/>
 # Membres du groupe :
