@@ -26,7 +26,7 @@
 <a name="sujet"/>
 # Description du projet :
 
-  Notre projet consiste à modéliser les effets de pesticides sur une colonie d'abeilles durant 6 mois. Lors de notre étude, nous allons voir comment modéliser la reproduction des abeilles et notamment l'évolution de la ponte d'oeufs. Ainsi lorsque l'on va simuler l'action du pesticides sur plusieurs colonies, nous allons pouvoir changer certain paramètres de reproduction et suivre l'évolution de la population d'abeilles
+  Notre projet consiste à modéliser les effets de pesticides sur une colonie d'abeilles durant plusieurs années. Lors de notre étude, nous allons voir comment modéliser la reproduction des abeilles et notamment l'évolution de la ponte d'oeufs. Ainsi lorsque l'on va simuler l'action du pesticides sur plusieurs colonies, nous allons pouvoir changer certain paramètres de reproduction et suivre l'évolution de la population d'abeilles
 
 <a name="doc_ref"/>
 # Modélisations mathématiques de la reproduction des abeilles
