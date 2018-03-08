@@ -57,10 +57,10 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 <a name="Bibliographie"/>
 # Bibliographie
 
-http://www.lenombredor.free.fr/nature.htm
-https://fr.wikipedia.org/wiki/Abeille
-https://fr.wikipedia.org/wiki/Suite_de_Fibonacci
-https://www.futura-sciences.com/planete/dossiers/zoologie-abeilles-accueillir-ruche-chez-soi-976/page/10/
-https://catoire-fantasque.be/cycle-de-developpement-abeilles/
-http://www.apivet.eu/2009/07/le-cycle-dune-colonie-dabeille-et-les-influences-externes.html
+- http://www.lenombredor.free.fr/nature.htm
+- https://fr.wikipedia.org/wiki/Abeille
+- https://fr.wikipedia.org/wiki/Suite_de_Fibonacci
+- https://www.futura-sciences.com/planete/dossiers/zoologie-abeilles-accueillir-ruche-chez-soi-976/page/10/
+- https://catoire-fantasque.be/cycle-de-developpement-abeilles/
+- http://www.apivet.eu/2009/07/le-cycle-dune-colonie-dabeille-et-les-influences-externes.html
 
