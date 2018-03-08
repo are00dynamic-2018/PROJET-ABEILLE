@@ -44,7 +44,10 @@
   
   -On a pris en compte la mort des abeilles qui vient ,après éclosion, environ 7 semaines (en y appliquant un facteur aléatoire) et on a pris en compte la mort d'abeilles par des prédateurs avec aussi un facteur aléatoire qui sera plus élevé pour les ouvrières car ce sont elles qui sortent de la ruche et donc qui ont le plus de risques de mourrir.
 
-            
+-On sait que la ponte des oeufs dépend aussi de la période de l'année , on s'est donc basé sur une courbe empirique de celle-ci pour trouver une fonction l'approchant. On a donc approximé la courbe des pontes en fonction de la période de l'année par un polynôme de degré 4.
+
+![image](http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi)
+
   <a name="Fibonacci"/>
     ## Fibonnacci ##
   
