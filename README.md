@@ -12,7 +12,7 @@
 
 
 
-<a name="membres"<font color="fuchsia">/>
+<a name="membres"<font color="blue">/>
 # Membres du groupe :
 
 **LANOUNI sofia**  
