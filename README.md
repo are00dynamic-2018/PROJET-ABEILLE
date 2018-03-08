@@ -53,7 +53,7 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 
 ![image](http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi)
   
-    <a name="Bibliographie"/>
+<a name="Bibliographie"/>
 # Bibliographie
 http://www.lenombredor.free.fr/nature.htm
 https://fr.wikipedia.org/wiki/Abeille
