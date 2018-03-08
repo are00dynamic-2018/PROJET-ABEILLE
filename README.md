@@ -8,8 +8,7 @@
   - [Suite Fibonacci ](#Fibonacci)
 - [Modélisation d'un ](#Modélisations)
   - [Prise en compte ](#Modélisation_plasticité)
-    - [Plasticité à court terme](#Modélisation_plasticité_court_terme)
-    - [Plasticité à long terme](#Modélisation_plasticité_long_terme)
+    - 
 
 
 
