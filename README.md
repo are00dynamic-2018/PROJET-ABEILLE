@@ -38,7 +38,7 @@
 
 ![image](http://www.lenombredor.free.fr/nature_fichiers/image021.jpg)
 
-  On remarque que les ancetres d'une abeille peuvent être modelisés par la suite de _**Fibonacci**._
+  On remarque que la modélisation des ancetres d'une abeille peuvent être modelisés par la suite de _**Fibonacci**._
 
             
   <a name="Fibonacci"/>
