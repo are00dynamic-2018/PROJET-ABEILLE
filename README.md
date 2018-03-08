@@ -42,7 +42,7 @@
 
   -On a pris en compte le fait qu'après la ponte , les oeufs éclosent au bout de 3 semaines à peu près.
   
-  -On a pris en compte la mort des abeilles qui survient environ au bout de 7 semaines (en y appliquant un facteur aléatoire) et on a pris en compte la mort d'abeilles par des prédateurs avec aussi un facteur aléatoire qui sera plus élevé pour les ouvrières car ce sont elles qui sortent de la ruche et donc qui ont le plus de risques de mourrir.
+  -On a pris en compte la mort des abeilles qui vient ,après éclosion, environ 7 semaines (en y appliquant un facteur aléatoire) et on a pris en compte la mort d'abeilles par des prédateurs avec aussi un facteur aléatoire qui sera plus élevé pour les ouvrières car ce sont elles qui sortent de la ruche et donc qui ont le plus de risques de mourrir.
 
             
   <a name="Fibonacci"/>
