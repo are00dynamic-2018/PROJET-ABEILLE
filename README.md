@@ -58,6 +58,11 @@ On définit 3 paramètres pour le pesticide que l'on compte faire varier dans no
 2) l'adaptation = la capacité des abeilles à resister au pesticide
 3) la portée = la capacité à atteindre une abeille avec le pesticide
 
+Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire.
+A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles qui seront effectivement mortes , d'après une fonction qui dépend cette fois-ci de la létalité, de la proportion d'abeilles resistantes définie et d'un autre paramètre aléatoire.
+Nous testerons ensuite la proportion des abeilles mortes par rapport aux abeilles touchées et celui-ci nous indiquera si les abeilles ont resistées ou pas. En effet , si cette proportion est est  inférieur au seuil d'adaptation on en déduit que les abeilles ont dévellopés une resistance et donc que la proportion d'abeilles resistante a augmenté
+
+
 <a name="Bibliographie"/>
 # Bibliographie
 
