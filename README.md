@@ -59,7 +59,7 @@ Après avoir fini de modéliser la population il est temps de s'intéresser aux 
 On définit 3 paramètres pour le pesticide et 1 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
 
 <a name="ParamètresPest"/>
-# Paramètres pesticides
+## Paramètres pesticides
 
 1) la létalité = la capacité du pesticide à tuer l'abeille
 
@@ -68,7 +68,7 @@ On définit 3 paramètres pour le pesticide et 1 paramètre pour les abeilles qu
 3) la portée = la capacité à atteindre une abeille avec le pesticide
 
 <a name="ParamètresAbeilles"/>
-# Paramètres Abeilles
+## Paramètres Abeilles
 
 1) Proportion d'abeilles resistantes
 
