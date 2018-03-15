@@ -55,6 +55,7 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
 On définit 3 paramètres pour le pesticide que l'on compte faire varier dans nos modèles,  à savoir :
 
+
 1) la létalité = la capacité du pesticide à tuer l'abeille
 
 2) l'adaptation = la capacité des abeilles à resister au pesticide
