@@ -8,6 +8,7 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 - [Description du projet ](#sujet)
 - [Modélisations mathématiques de la reproduction des abeilles](#doc_ref)  
   - [Suite Fibonacci ](#Fibonacci)
+-[Paramètres pesticides](#Paramètres pesticides)  
   
 - [Bibliographie](#Bibliographie)
 
@@ -53,8 +54,10 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 - Nous avons crée des fonctions qui permettent d'observer le comportement des abeilles sur plusieurs années.
 
 Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
-On définit 3 paramètres pour le pesticide que l'on compte faire varier dans nos modèles,  à savoir :
+On définit 3 paramètres pour le pesticide et 1 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
 
+<a name="Paramètres pesticides"/>
+# Paramètres pesticides
 
 1) la létalité = la capacité du pesticide à tuer l'abeille
 
