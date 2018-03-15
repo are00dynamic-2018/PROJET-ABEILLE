@@ -56,7 +56,7 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 - Nous avons crée des fonctions qui permettent d'observer le comportement des abeilles sur plusieurs années.
 
 Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
-On définit 3 paramètres pour le pesticide et 1 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
+On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
 
 <a name="ParamètresPest"/>
 ## Paramètres pesticides
@@ -71,10 +71,13 @@ On définit 3 paramètres pour le pesticide et 1 paramètre pour les abeilles qu
 ## Paramètres Abeilles
 
 1) Proportion d'abeilles resistantes
+2) Taux de restistance d'abeilles resistantes
+3) Taux de resistance d'abeilles non resistantes
 
-Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire.
-A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles qui seront effectivement mortes , d'après une fonction qui dépend cette fois-ci de la létalité, de la proportion d'abeilles resistantes définie et d'un autre paramètre aléatoire.
-Nous testerons ensuite la proportion des abeilles mortes par rapport aux abeilles touchées et celui-ci nous indiquera si les abeilles ont resistées ou pas. En effet , si cette proportion est est  inférieur au seuil d'adaptation on en déduit que les abeilles ont dévellopés une resistance et donc que la proportion d'abeilles resistante a augmenté
+
+Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire , on distinguinguera les abeilles touchées resistantes et celles qui ne sont pas reistantes.
+A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles qui seront effectivement mortes ,chez les resistantes qui depend de leur taux de resistance et idem pour les non resistantes en y faisant intervenir la létalité ainsi qu'un paramètre aléatoire. 
+Nous testerons ensuite la proportion des abeilles mortes par rapport aux abeilles touchées et celui-ci nous indiquera si les abeilles ont resistées ou pas ,en distinguant toujours les abeilles resistantes des non resistantes. En effet , si cette proportion est est  inférieur au seuil d'adaptation on en déduit que les abeilles ont dévellopés une resistance et donc le taux de resistance des abeilles.
 
 
 <a name="Bibliographie"/>
