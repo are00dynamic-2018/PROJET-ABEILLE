@@ -8,8 +8,8 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 - [Description du projet ](#sujet)
 - [Modélisations mathématiques de la reproduction des abeilles](#doc_ref)  
   - [Suite Fibonacci ](#Fibonacci)
--[Paramètres pesticides](#Paramètres pesticides)  
-  
+
+- [Paramètres pesticides](#Paramètres pesticides)  
 - [Bibliographie](#Bibliographie)
 
 <a name="membres"/>
