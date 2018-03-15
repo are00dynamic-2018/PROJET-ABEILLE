@@ -9,7 +9,8 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 - [Modélisations mathématiques de la reproduction des abeilles](#doc_ref)  
   - [Suite Fibonacci ](#Fibonacci)
 
-- [Paramètres pesticides](#ParamètresPest)  
+- [Paramètres Pesticides](#ParamètresPest) 
+- [Paramètres Abeilles](#ParamètresAbeilles) 
 
 - [Bibliographie](#Bibliographie)
 
@@ -65,6 +66,11 @@ On définit 3 paramètres pour le pesticide et 1 paramètre pour les abeilles qu
 2) l'adaptation = la capacité des abeilles à resister au pesticide
 
 3) la portée = la capacité à atteindre une abeille avec le pesticide
+
+<a name="ParamètresAbeilles"/>
+# Paramètres Abeilles
+
+1) Proportion d'abeilles resistantes
 
 Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire.
 A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles qui seront effectivement mortes , d'après une fonction qui dépend cette fois-ci de la létalité, de la proportion d'abeilles resistantes définie et d'un autre paramètre aléatoire.
