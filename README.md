@@ -52,7 +52,23 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 - On sait que la ponte des oeufs dépend aussi de la période de l'année , on s'est donc basé sur une courbe empirique de celle-ci pour trouver une fonction l'approchant en choisissant d'observer l'évolution d'une population d'abeilles de Provence On a donc approximé la courbe des pontes en fonction de la période de l'année par un polynôme de degré 4.
 
 ![image](http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi)
+ '''
  
+ #NOMBRE D OEUFS PAR SEMAINE
+
+def nb_oeuf_par_semaine1(k):
+    #Avant 14 semaines
+    if k<=14:
+        nb_oeufs=int((-2.6064*k**3)+(33.363*k**2)+(22.356*k)+1000)
+    else:
+    #Apres 14 semaines
+        nb_oeufs=int((0.3906*k**4)+(-31.539*k**3)+(929*k**2)+(-11826*k)+55718)
+        
+    return(7*nb_oeufs)
+    
+    '''
+        
+        
 - Nous avons crée des fonctions qui permettent d'observer le comportement des abeilles sur plusieurs années.
 
 Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
