@@ -85,6 +85,7 @@ En réalité, ce n'est pas cette fonction-là que nous utilisons, mais plutôt c
 
 
 - Nous avons crée des fonctions qui permettent d'observer le comportement des abeilles sur plusieurs années.
+- Nous avons, par ailleurs, rajouté des causes de morts autres que la vieillesse, qui illustrent les aléas naturels (prédateurs, accidents,...)
 
 Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
 On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
