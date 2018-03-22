@@ -52,7 +52,38 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 - On sait que la ponte des oeufs dépend aussi de la période de l'année , on s'est donc basé sur une courbe empirique de celle-ci pour trouver une fonction l'approchant en choisissant d'observer l'évolution d'une population d'abeilles de Provence On a donc approximé la courbe des pontes en fonction de la période de l'année par un polynôme de degré 4.
 
 ![image](http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi)
- 
+Voilà la ligne de code modélisant le nombre d'oeufs par semaines avant et après 14 semaines. :
+
+    '''
+    def nb_oeuf_par_semaine1(k):
+      #Avant 14 semaines
+      if k<=14:
+        nb_oeufs=int((-2.6064*k**3)+(33.363*k**2)+(22.356*k)+1000)
+      else:
+        #Apres 14 semaines
+        nb_oeufs=int((0.3906*k**4)+(-31.539*k**3)+(929*k**2)+(-11826*k)+55718  
+    return(7*nb_oeufs)
+    '''
+        
+Si le nombre de semaines k est inférieur à 14, le nombre d'oeufs par semaine est de (-2.6064 x k³)+(33.363 x k²)+(22.356 x k)+1000).
+En revanche, si le nombre de semaine est supréieur à 14, alors les abeilles pondront un nombre d'oeufs égal à (0.3906 x k⁴)+(-31.539 x k³)+(929 x k²)+(-11826 x k)+55718.
+On arrondit à une valeur entière pour simplifier les résultats.
+
+En réalité, ce n'est pas cette fonction-là que nous utilisons, mais plutôt celle-ci qui utilise des intégrales :
+
+
+    '''
+    def nb_oeuf_par_semaine1(k):
+      #Avant 14 semaines
+      if k<=14:
+        nb_oeufs=int((-(2.6064/4)*(k+1)**4)+((33.363/3)*(k+1)**3)+((22.356/2)*(k+1)**2)+1000*(k+1))-int((-(2.6064/4)*k**4)+((33.363/3)*k**3)+((22.356/2)*k**2)+1000*k)
+      else:
+        #Apres 14 semaine
+        nb_oeufs=int(((0.3906/5)*(k+1)**5)+((-31.539/4)*(k+1)**4)+((929/3)*(k+1)**3)+((-11826/2)*(k+1)**2)+55718*(k+1)) int(((0.3906/5)*(k**5)+((-31.539/4)*k**4)+((929/3)*k**3)+((-11826/2)*k**2)+55718*k))
+    return(7*nb_oeufs)
+    '''
+
+
 - Nous avons crée des fonctions qui permettent d'observer le comportement des abeilles sur plusieurs années.
 
 Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
