@@ -65,8 +65,8 @@ Voilà la ligne de code modélisant le nombre d'oeufs par semaines avant et apr�
     return(7*nb_oeufs)
     '''
         
-Si le nombre de semaines k est inférieur à 14, le nombre d'oeufs par semaine est de (-2.6064*k*k*k)+(33.363*k*k)+(22.356*k)+1000).
-En revanche, si le nombre de semaine est supréieur à 14, alors les abeilles pondront un nombre d'oeufs égal à (0.3906*k*k*k*k)+(-31.539*k*k*k)+(929*k*k)+(-11826*k)+55718.
+Si le nombre de semaines k est inférieur à 14, le nombre d'oeufs par semaine est de (-2.6064 x k³)+(33.363 x k²)+(22.356 x k)+1000).
+En revanche, si le nombre de semaine est supréieur à 14, alors les abeilles pondront un nombre d'oeufs égal à (0.3906 x k⁴)+(-31.539 x k³)+(929 x k²)+(-11826 x k)+55718.
 On arrondit à une valeur entière pour simplifier le graphiques.
 
 - Nous avons crée des fonctions qui permettent d'observer le comportement des abeilles sur plusieurs années.
