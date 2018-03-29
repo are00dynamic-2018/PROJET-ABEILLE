@@ -51,7 +51,7 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
      (Notes:la durée de vie varie aussi en fonction de la période en réalité pour les ouvrières 13 à 38 jours en été , 30 à 60 jours au printemps , environ 140 jours en hiver et pour les mâles de 21 à 32 jours au printemps et le début de l’été et jusqu’à 90 jours à la fin de l’été et en automne ) 
 - On sait que la ponte des oeufs dépend aussi de la période de l'année , on s'est donc basé sur une courbe empirique de celle-ci pour trouver une fonction l'approchant en choisissant d'observer l'évolution d'une population d'abeilles de Provence On a donc approximé la courbe des pontes en fonction de la période de l'année par un polynôme de degré 4.
 
-![image](http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi)
+
 Voilà la ligne de code modélisant le nombre d'oeufs par semaines avant et après 14 semaines. :
 
     '''
@@ -89,6 +89,9 @@ Notre fonction reproduction fonctionne de la façon suivante :
   - Nous appelons population le tuple (nb_males, nb_ouvriere, reine) constitué du nombre de males, d'ouvrières et de la présence ou non de la reine. On crée une liste R, qui représente le nombre de males et de femelles au cours du temps. Le nombre de males et d'ouvrières morts correspond alors au premier tuple de la liste d'oeufs pondus, car chaque semaine, l'on décale d'un rang le nombres d'oeufs pondu jusqu'à 7 semaines (espérance de vie d'une abeille). On soustrait alors le nombre dde males morts et d'ouvrières mortes au nombre de males et d'ouvrières.
   
 - Nous avons, par ailleurs, rajouté des causes de morts autres que la vieillesse, qui illustrent les aléas naturels (prédateurs, accidents,...)
+
+Voici le graphe obtenu sur plusieurs années :
+![Image](http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi)
 
 Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
 On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
