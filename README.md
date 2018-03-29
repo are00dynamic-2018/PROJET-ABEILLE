@@ -4,18 +4,20 @@
 https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 
 # Table des matières 
-- [Membre du groupe  :honeybee:](#membres)  
-- [Description du projet  :honeybee:](#sujet)
-- [Modélisations mathématiques de la reproduction des abeilles  :honeybee:](#doc_ref)  
-  - [Suite Fibonacci   :sunflower:](#Fibonacci)
+- [Membre du groupe  :honeybee: ](#membres)  
+- [Description du projet  :honeybee: ](#sujet)
+- [Modélisations mathématiques de la reproduction des abeilles  :honeybee: ](#doc_ref)  
+  - [Suite Fibonacci   :sunflower: ](#Fibonacci)
 
-- [Paramètres Pesticides  :honeybee:](#ParamètresPest) 
-- [Paramètres Abeilles  :honeybee:](#ParamètresAbeilles) 
+- [Nouvelle Modélisations mathématiques de la reproduction des abeilles appliquée à l'aaparition des pesticides  :honeybee: ](#ParamètresReproductionPesticide)
+  - [Paramètres Pesticides  :honeybee: ](#ParamètresPest) 
+  - [Paramètres Abeilles  :honeybee: ](#ParamètresAbeilles) 
+  - [Modélisation  :honeybee: ](#Modelisation) 
 
-- [Bibliographie  :honeybee:](#Bibliographie)
+- [Bibliographie  :honeybee: ](#Bibliographie)
 
 <a name="membres"/>
-# Membres du groupe :
+# Membres du groupe :honeybee:  
 
 **LANOUNI sofia**  
 
@@ -26,12 +28,12 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 **LUBEK Lazare** 
 
 <a name="sujet" />
-# Description du projet:
+# Description du projet :honeybee: 
 
   Notre projet consiste à modéliser les effets de pesticides sur une colonie d'abeilles durant plusieurs années. Lors de notre étude, nous allons voir comment modéliser la reproduction des abeilles et notamment l'évolution de la ponte d'oeufs. Ainsi lorsque l'on va simuler l'action du pesticide sur plusieurs colonies, nous allons pouvoir changer certain paramètres de reproduction et suivre l'évolution de la population d'abeilles
 
 <a name="doc_ref"/>
-# Modélisations mathématiques de la reproduction des abeilles:
+# Modélisations mathématiques de la reproduction des abeilles :honeybee: 
 
   Dans une colonie d'abeilles, il y a entre 20 000 et 90 000 abeilles. 
   
@@ -41,7 +43,7 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 ![image](http://www.lenombredor.free.fr/nature_fichiers/image021.jpg)
 
   <a name="Fibonacci"/>
-### Fibonacci
+### Fibonacci  :sunflower:
     
   En effet , on remarque que la population d'une ruche peut être modelisée par la suite de _**Fibonacci**._ étant donné qu'à chaque génération , les nombres de femelles et de mâles sont deux nombres consécutifs de cette suite. On peut démontrer mathématiquement que la limite du rapport entre F_(n+1) et F_n est le nombre d'or (~1,618).On comprend donc que le rapport entre les mâle et femelles est environ égale au nombre d'or. Et étant donné qu'on parle d'une ruche qui possède au minimum 10 000 abeilles (soit 4000 mâles et 6000 femelles environ) , c'est à dire environ F_19 et F_20 le rapport entre les deux est assez proche pour approximer dans notre modèle, l'évolution de la population en se servant du coefficient du nombre d'or plutôt que de definir la suite en elle-même qui demanderait beaucoup plus de puissance à notre ordinateur.
 
@@ -91,11 +93,14 @@ Notre fonction reproduction fonctionne de la façon suivante :
   
 - Nous avons, par ailleurs, rajouté des causes de morts autres que la vieillesse, qui illustrent les aléas naturels (prédateurs, accidents,...)
 
+<a name="ParamètresReproductionPesticide"/>
+# Nouvelle Modélisations mathématiques de la reproduction des abeilles appliquée à l'aaparition des pesticides :honeybee: 
+
   Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
 On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
 
-<a name="ParamètresPest"/>
-## Paramètres pesticides
+  <a name="ParamètresPest"/>
+### Paramètres pesticides :sunflower: 
 
 
 
@@ -112,8 +117,8 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
     pesticide=(letalite,adaptation,porte)
     '''
 
-<a name="ParamètresAbeilles"/>
-## Paramètres Abeilles
+  <a name="ParamètresAbeilles"/>
+### Paramètres Abeilles :sunflower:
 
 
 | Paramètres   | Utilité                                                                                |   Variation        |
@@ -124,11 +129,13 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
   
   Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire , on distinguinguera les abeilles touchées resistantes et celles qui ne sont pas reistantes.
 A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles qui seront effectivement mortes ,chez les resistantes qui depend de leur taux de resistance et idem pour les non resistantes en y faisant intervenir la létalité ainsi qu'un paramètre aléatoire. 
-  Nous testerons ensuite la proportion des abeilles mortes par rapport aux abeilles touchées et celui-ci nous indiquera si les abeilles ont resistées ou pas ,en distinguant toujours les abeilles resistantes des non resistantes. En effet , si cette proportion est est  inférieur au seuil d'adaptation on en déduit que les abeilles ont dévellopés une resistance et donc le taux de resistance des abeilles.
+  Nous testerons ensuite la proportion des abeilles mortes par rapport aux abeilles touchées et celui-ci nous indiquera si les abeilles ont resistées ou pas ,en distinguant toujours les abeilles resistantes des non resistantes. En effet , si cette proportion est inférieure au seuil d'adaptation on en déduit que les abeilles ont dévellopés une resistance et donc le taux de resistance des abeilles.
 
+ <a name="Modelisation"/>
+### Modelisation
 
 <a name="Bibliographie"/>
-# Bibliographie
+# Bibliographie :honeybee: 
 
 - http://www.lenombredor.free.fr/nature.htm
 - https://fr.wikipedia.org/wiki/Abeille
