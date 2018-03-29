@@ -167,6 +167,8 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
   D'après notre definition la létalité est la proportion d'abeilles tuées sur la population d'abeilles non résistantes. En effet, la poûlation résistantes ne peut pas être tuées car elle resiste face au pesticide. En revanche la proportion de population non resistante va elle être sensible aux pesticides et mourir ou resister. 
   C'est ce que l'on definit dans notres algorithme: 
   
+  
+  
      ''' 
  
     def abeilles_mortes(touchees,taux_res,taux_nres):
@@ -176,6 +178,9 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
       return(int(res_mortes),int(nres_mortes))
     
      '''
+     
+     
+     
   Au fur et à mesure, on fait évoluer le taux de résistance et le taux de non résistance à **+/- 1%**.
  Ainsi on a notre nouvelle population d'ouvrières calculée qu on recuperera dans notre nouvelle modélisation.
  
