@@ -51,6 +51,7 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
      (Notes:la durée de vie varie aussi en fonction de la période en réalité pour les ouvrières 13 à 38 jours en été , 30 à 60 jours au printemps , environ 140 jours en hiver et pour les mâles de 21 à 32 jours au printemps et le début de l’été et jusqu’à 90 jours à la fin de l’été et en automne ) 
 - On sait que la ponte des oeufs dépend aussi de la période de l'année , on s'est donc basé sur une courbe empirique de celle-ci pour trouver une fonction l'approchant en choisissant d'observer l'évolution d'une population d'abeilles de Provence On a donc approximé la courbe des pontes en fonction de la période de l'année par un polynôme de degré 4.
 
+![Image](http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi)
 
 Voilà la ligne de code modélisant le nombre d'oeufs par semaines avant et après 14 semaines. :
 
@@ -91,7 +92,7 @@ Notre fonction reproduction fonctionne de la façon suivante :
 - Nous avons, par ailleurs, rajouté des causes de morts autres que la vieillesse, qui illustrent les aléas naturels (prédateurs, accidents,...)
 
 Voici le graphe obtenu sur plusieurs années :
-![Image](http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi)
+![GitHub Logo](/workspace/courbe pluriannuelle.png)
 
 Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
 On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
