@@ -110,11 +110,11 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
 
 
 
-| Paramètres     | Utilité                                                                          |   Variation        |
-| ---------------|:--------------------------------------------------------------------------------:|-------------------:|
-| `létalité`     |la capacité du pesticide à tuer l'abeille i.e la facilité du pesticide à tuer   | réelle entre 0 et 1|
-| `adaptation`   |la capacité des abeilles à resister au pesticide                                | réelle entre 0 et 1|
-| `portée`       |la capacité à atteindre une abeille avec le pesticide                           | réelle entre 0 et 1|
+| Paramètres     | Utilité                                                                          |   Variation          |
+| ---------------|:--------------------------------------------------------------------------------:|---------------------:|
+| `létalité`     |la capacité du pesticide à tuer l'abeille i.e la facilité du pesticide à tuer     | réelle entre 0.5 et 1|
+| `adaptation`   |la capacité des abeilles à resister au pesticide                                  | réelle entre 0 et 1  |
+| `portée`       |la capacité à atteindre une abeille avec le pesticide                             | réelle entre 0 et 1  |
    
    Le pesticide depend de ses trois paramètres. Dans notres programme, le pesticide est un tuple caractérisée par ses trois paramètres :
     
