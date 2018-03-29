@@ -91,20 +91,35 @@ Notre fonction reproduction fonctionne de la façon suivante :
   
 - Nous avons, par ailleurs, rajouté des causes de morts autres que la vieillesse, qui illustrent les aléas naturels (prédateurs, accidents,...)
 
-Voici le graphe obtenu sur plusieurs années :
-![alt text](https://github.com/3682578/workspace/courbe pluriannuelle.png)
-
 Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
 On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
 
 <a name="ParamètresPest"/>
 ## Paramètres pesticides
 
-1) la létalité = la capacité du pesticide à tuer l'abeille
 
-2) l'adaptation = la capacité des abeilles à resister au pesticide
 
-3) la portée = la capacité à atteindre une abeille avec le pesticide
+| Paramètres   | Utilité                                                                        | Variation          |
+| -------------|:------------------------------------------------------------------------------:|-------------------:|
+| létalité     |la capacité du pesticide à tuer l'abeille i.e la facilité du pesticide à tuer   | réelle entre 0 et 1|
+| adaptation   |la capacité des abeilles à resister au pesticide                                | réelle entre 0 et 1|
+| portée       |la capacité à atteindre une abeille avec le pesticide                           | réelle entre 0 et 1|
+
+1) la létalité = la capacité du pesticide à tuer l'abeille i.e la facilité du pesticide à tuer .
+    On considère que ce paramètre est un réelle variant entre 0 & 1.
+
+2) l'adaptation = la capacité des abeilles à resister au pesticide.
+    On considère que ce paramètre est un réelle variant entre 0 & 1.
+
+3) la portée = la capacité à atteindre une abeille avec le pesticide i.e le pourcentage de la population atteinte.
+    On considère que ce paramètre est un réelle variant entre 0 & 1.
+    
+    Le pesticide depend de ses trois paramètres. Dans notres programme, le pesticide est un tuple caractérisée par ses trois paramètres. 
+    
+
+    '''
+    pesticide=(letalite,adaptation,porte)
+    '''
 
 <a name="ParamètresAbeilles"/>
 ## Paramètres Abeilles
