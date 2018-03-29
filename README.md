@@ -66,11 +66,11 @@ Voilà la ligne de code modélisant le nombre d'oeufs par semaines avant et apr�
     return(7*nb_oeufs)
     '''
         
-Si le nombre de semaines k est inférieur à 14, le nombre d'oeufs par semaine est de (-2.6064 x k³)+(33.363 x k²)+(22.356 x k)+1000).
-En revanche, si le nombre de semaine est supréieur à 14, alors les abeilles pondront un nombre d'oeufs égal à (0.3906 x k⁴)+(-31.539 x k³)+(929 x k²)+(-11826 x k)+55718.
+  Si le nombre de semaines k est inférieur à 14, le nombre d'oeufs par semaine est de (-2.6064 x k³)+(33.363 x k²)+(22.356 x k)+1000).
+  En revanche, si le nombre de semaine est supréieur à 14, alors les abeilles pondront un nombre d'oeufs égal à (0.3906 x k⁴)+(-31.539 x k³)+(929 x k²)+(-11826 x k)+55718.
 On arrondit à une valeur entière pour simplifier les résultats.
 
-En réalité, ce n'est pas cette fonction-là que nous utilisons, mais plutôt celle-ci qui utilise des intégrales :
+  En réalité, ce n'est pas cette fonction-là que nous utilisons, mais plutôt celle-ci qui utilise des intégrales :
 
 
     '''
@@ -91,7 +91,7 @@ Notre fonction reproduction fonctionne de la façon suivante :
   
 - Nous avons, par ailleurs, rajouté des causes de morts autres que la vieillesse, qui illustrent les aléas naturels (prédateurs, accidents,...)
 
-Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
+  Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
 On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
 
 <a name="ParamètresPest"/>
@@ -115,14 +115,16 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
 <a name="ParamètresAbeilles"/>
 ## Paramètres Abeilles
 
-1) Proportion d'abeilles resistantes
-2) Taux de restistance d'abeilles resistantes
-3) Taux de resistance d'abeilles non resistantes
 
-
-Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire , on distinguinguera les abeilles touchées resistantes et celles qui ne sont pas reistantes.
+| Paramètres   | Utilité                                                                                |   Variation        |
+| -------------|:--------------------------------------------------------------------------------------:|-------------------:|
+| alpha        |proportion de la population resistante, qui resite                                      | réelle entre 0 et 1|
+| taux_res     |taux de resistance sur la population resistante                                         | réelle entre 0 et 1|
+| taux_nres    |taux de resistance sur la population non resistante ( :exclamation: taux_res>taux_nres )| réelle entre 0 et 1|
+  
+  Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire , on distinguinguera les abeilles touchées resistantes et celles qui ne sont pas reistantes.
 A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles qui seront effectivement mortes ,chez les resistantes qui depend de leur taux de resistance et idem pour les non resistantes en y faisant intervenir la létalité ainsi qu'un paramètre aléatoire. 
-Nous testerons ensuite la proportion des abeilles mortes par rapport aux abeilles touchées et celui-ci nous indiquera si les abeilles ont resistées ou pas ,en distinguant toujours les abeilles resistantes des non resistantes. En effet , si cette proportion est est  inférieur au seuil d'adaptation on en déduit que les abeilles ont dévellopés une resistance et donc le taux de resistance des abeilles.
+  Nous testerons ensuite la proportion des abeilles mortes par rapport aux abeilles touchées et celui-ci nous indiquera si les abeilles ont resistées ou pas ,en distinguant toujours les abeilles resistantes des non resistantes. En effet , si cette proportion est est  inférieur au seuil d'adaptation on en déduit que les abeilles ont dévellopés une resistance et donc le taux de resistance des abeilles.
 
 
 <a name="Bibliographie"/>
