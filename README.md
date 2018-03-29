@@ -141,16 +141,18 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
   **Ici on a utilisé le paramètre alpha qui correspond à la proportion de la population qui résiste.**
    
  '''
- def abeilles_touchees(nb_ouvriere,alpha):
-    res=nb_ouvriere*alpha
-    res_touchees=(int(res*(porte*(randrange(9000,11000)/10000))))
     
-    nres=nb_ouvriere-res
-    nres_touchees=(int(nres*(porte*(randrange(9000,11000)/10000))))
+    def abeilles_touchees(nb_ouvriere,alpha):
+      res=nb_ouvriere*alpha
     
-    if (res_touchees+nres_touchees)>nb_ouvriere:
+      res_touchees=(int(res*(porte*(randrange(9000,11000)/10000))))
+    
+      nres=nb_ouvriere-res
+      nres_touchees=(int(nres*(porte*(randrange(9000,11000)/10000))))
+    
+      if (res_touchees+nres_touchees)>nb_ouvriere:
         return (res,nres)
-    return (res_touchees,nres_touchees)
+      return (res_touchees,nres_touchees)
             
   '''
   A partir du nombre d'abeilles touchées, on peut déterminer le nombre d'abeilles mortes.
@@ -159,11 +161,12 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
   C'est ce que l'on definit dans notres algorithme: 
   
  ''' 
- def abeilles_mortes(touchees,taux_res,taux_nres):
-    res_mortes,nres_mortes=touchees
-    res_mortes=res_mortes*letalite*(1-taux_res)*(randrange(9000,11000)/10000)
-    nres_mortes=nres_mortes*letalite*(1-taux_nres)*(randrange(9000,11000)/10000)
-    return(int(res_mortes),int(nres_mortes))
+ 
+    def abeilles_mortes(touchees,taux_res,taux_nres):
+      res_mortes,nres_mortes=touchees
+      res_mortes=res_mortes*letalite*(1-taux_res)*(randrange(9000,11000)/10000)
+      nres_mortes=nres_mortes*letalite*(1-taux_nres)*(randrange(9000,11000)/10000)
+      return(int(res_mortes),int(nres_mortes))
     
  '''
  
