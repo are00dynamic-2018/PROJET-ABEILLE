@@ -162,10 +162,10 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
       return (res_touchees,nres_touchees)
             
      '''
+  
   A partir du nombre d'abeilles touchées, on peut déterminer le nombre d'abeilles mortes.
  **On utilisera le paramètre letalite qui correspond à la capacité du pesticide à tuer une abeille, le taux_res et le taux_nres qui correspondent aux taux de resitance ou non au pesticides.**
-  D'après notre definition la létalité est la proportion d'abeilles tuées sur la population d'abeilles non résistantes. En effet, la poûlation résistantes ne peut pas être tuées car elle resiste face au pesticide. En revanche la proportion de population non resistante va elle être sensible aux pesticides et mourir ou resister. 
-  C'est ce que l'on definit dans notres algorithme: 
+  D'après notre definition la létalité est la proportion d'abeilles tuées sur la population d'abeilles non résistantes. En effet, la poûlation résistantes ne peut pas être tuées car elle resiste face au pesticide. En revanche la proportion de population non resistante va elle être sensible aux pesticides et mourir ou resister. C'est ce que l'on definit dans notres algorithme: 
   
   
   
