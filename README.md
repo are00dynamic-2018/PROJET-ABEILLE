@@ -92,7 +92,7 @@ Notre fonction reproduction fonctionne de la façon suivante :
 - Nous avons, par ailleurs, rajouté des causes de morts autres que la vieillesse, qui illustrent les aléas naturels (prédateurs, accidents,...)
 
 Voici le graphe obtenu sur plusieurs années :
-![GitHub Logo](/workspace/courbe pluriannuelle.png)
+![alt text](https://github.com/3682578/workspace/courbe pluriannuelle.png)
 
 Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
 On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
