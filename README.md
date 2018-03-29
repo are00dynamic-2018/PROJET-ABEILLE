@@ -4,20 +4,21 @@
 https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 
 # Table des matières 
-- [Membre du groupe  :honeybee: ](#membres)  
-- [Description du projet  :honeybee: ](#sujet)
-- [Modélisations mathématiques de la reproduction des abeilles  :honeybee: ](#doc_ref)  
-  - [Suite Fibonacci   :sunflower: ](#Fibonacci)
+- [Membre du groupe  ](#membres)  
+- [Description du projet  ](#sujet)
+- [Modélisations mathématiques de la reproduction des abeilles ](#doc_ref)  
+  - [Suite Fibonacci   ](#Fibonacci)
 
-- [Nouvelle Modélisations mathématiques de la reproduction des abeilles appliquée à l'aaparition des pesticides  :honeybee: ](#ParamètresReproductionPesticide)
-  - [Paramètres Pesticides  :honeybee: ](#ParamètresPest) 
-  - [Paramètres Abeilles  :honeybee: ](#ParamètresAbeilles) 
-  - [Modélisation  :honeybee: ](#Modelisation) 
+- [Nouvelle Modélisations mathématiques de la reproduction des abeilles appliquée à l'aaparition des pesticides ](#ParamètresReproductionPesticide)
+  - [Paramètres Pesticides   ](#ParamètresPest) 
+  - [Paramètres Abeilles  ](#ParamètresAbeilles) 
+  - [Modélisation  ](#Modelisation) 
 
-- [Bibliographie  :honeybee: ](#Bibliographie)
+- [Bibliographie  ](#Bibliographie)
 
 <a name="membres"/>
 # Membres du groupe :honeybee:  
+
 
 **LANOUNI sofia**  
 
@@ -30,10 +31,12 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 <a name="sujet" />
 # Description du projet :honeybee: 
 
+
   Notre projet consiste à modéliser les effets de pesticides sur une colonie d'abeilles durant plusieurs années. Lors de notre étude, nous allons voir comment modéliser la reproduction des abeilles et notamment l'évolution de la ponte d'oeufs. Ainsi lorsque l'on va simuler l'action du pesticide sur plusieurs colonies, nous allons pouvoir changer certain paramètres de reproduction et suivre l'évolution de la population d'abeilles
 
 <a name="doc_ref"/>
 # Modélisations mathématiques de la reproduction des abeilles :honeybee: 
+
 
   Dans une colonie d'abeilles, il y a entre 20 000 et 90 000 abeilles. 
   
@@ -44,6 +47,7 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 
   <a name="Fibonacci"/>
 ### Fibonacci  :sunflower:
+
     
   En effet , on remarque que la population d'une ruche peut être modelisée par la suite de _**Fibonacci**._ étant donné qu'à chaque génération , les nombres de femelles et de mâles sont deux nombres consécutifs de cette suite. On peut démontrer mathématiquement que la limite du rapport entre F_(n+1) et F_n est le nombre d'or (~1,618).On comprend donc que le rapport entre les mâle et femelles est environ égale au nombre d'or. Et étant donné qu'on parle d'une ruche qui possède au minimum 10 000 abeilles (soit 4000 mâles et 6000 femelles environ) , c'est à dire environ F_19 et F_20 le rapport entre les deux est assez proche pour approximer dans notre modèle, l'évolution de la population en se servant du coefficient du nombre d'or plutôt que de definir la suite en elle-même qui demanderait beaucoup plus de puissance à notre ordinateur.
 
@@ -96,11 +100,13 @@ Notre fonction reproduction fonctionne de la façon suivante :
 <a name="ParamètresReproductionPesticide"/>
 # Nouvelle Modélisations mathématiques de la reproduction des abeilles appliquée à l'aaparition des pesticides :honeybee: 
 
+
   Après avoir fini de modéliser la population il est temps de s'intéresser aux effets des pesticides sur celle-ci:
 On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles que l'on compte faire varier dans nos modèles,  à savoir :
 
   <a name="ParamètresPest"/>
 ### Paramètres pesticides :sunflower: 
+
 
 
 
@@ -119,6 +125,7 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
 
   <a name="ParamètresAbeilles"/>
 ### Paramètres Abeilles :sunflower:
+
 
 
 | Paramètres   | Utilité                                                                                |   Variation        |
