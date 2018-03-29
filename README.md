@@ -20,13 +20,13 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 # Membres du groupe   
 
 
-                                        **LANOUNI sofia**  
+                                           LANOUNI sofia 
 
-                                        **COHEN-SOLAL Roy**
+                                           COHEN-SOLAL Roy 
 
-                                       **MALASIGNE Clément**
+                                          MALASIGNE Clément 
 
-                                         **LUBEK Lazare** 
+                                           LUBEK Lazare 
 
 <a name="sujet" />
 # Description du projet  
