@@ -140,7 +140,7 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
   D'après les paramètres sités ci-dessus, on peut calculer le nombre d'abeilles touchées. En effet on a **le nombre d'abeilles resistantes touchées** qui est alpha du nombre de population totale d'ouvrière.On affinera à *+/- 1%*. **Le nombre d'abeilles non resistantse** est simplement lenombre total d'ouvrière moins le nombre  d'abeilles resistantes touchées, tours affiner à *+/- 1%*.
   **Ici on a utilisé le paramètre alpha qui correspond à la proportion de la population qui résiste.**
    
-    '''
+ '''
  def abeilles_touchees(nb_ouvriere,alpha):
     res=nb_ouvriere*alpha
     res_touchees=(int(res*(porte*(randrange(9000,11000)/10000))))
@@ -152,20 +152,20 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
         return (res,nres)
     return (res_touchees,nres_touchees)
             
-    '''
+  '''
   A partir du nombre d'abeilles touchées, on peut déterminer le nombre d'abeilles mortes.
  **On utilisera le paramètre letalite qui correspond à la capacité du pesticide à tuer une abeille, le taux_res et le taux_nres qui correspondent aux taux de resitance ou non au pesticides.**
   D'après notre definition la létalité est la proportion d'abeilles tuées sur la population d'abeilles non résistantes. En effet, la poûlation résistantes ne peut pas être tuées car elle resiste face au pesticide. En revanche la proportion de population non resistante va elle être sensible aux pesticides et mourir ou resister. 
   C'est ce que l'on definit dans notres algorithme: 
   
-    ''' 
+ ''' 
  def abeilles_mortes(touchees,taux_res,taux_nres):
     res_mortes,nres_mortes=touchees
     res_mortes=res_mortes*letalite*(1-taux_res)*(randrange(9000,11000)/10000)
     nres_mortes=nres_mortes*letalite*(1-taux_nres)*(randrange(9000,11000)/10000)
     return(int(res_mortes),int(nres_mortes))
     
-    '''
+ '''
  
  
  
