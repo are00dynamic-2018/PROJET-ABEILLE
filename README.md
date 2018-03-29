@@ -143,6 +143,10 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
 
   Dans notre modélisation, on considère que les "abeilles_touchees" représentent la populations femelles étant donné qu'elles sont les seules à sortir de la ruche, elles sont les seules à être touchées par le pesticides. 
   POur la suite des explications, on parlera des abeilles ouvrières butineuses.
+  On etudira d'abord :
+  - [ ] Les abeilles touchées
+  - [ ] Les abeilles mortes
+
   
   D'après les paramètres sités ci-dessus, on peut calculer le nombre d'abeilles touchées. En effet on a **le nombre d'abeilles resistantes touchées** qui est alpha de porte du nombre de population totale d'ouvrière. En d'autre terme la portée de la population qui est touchée par le pesticude. On affinera à *+/- 1%*. **Le nombre d'abeilles non resistantse** est simplement le nombre total d'ouvrière moins le nombre  d'abeilles resistantes touchées, tours affiner à *+/- 1%*.
   **Ici on a utilisé le paramètre alpha qui correspond à la proportion de la population qui résiste.**
@@ -162,7 +166,10 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
       return (res_touchees,nres_touchees)
             
      '''
-  
+     
+     
+  - [x] Les abeilles touchées
+  - [ ] Les abeilles mortes
   A partir du nombre d'abeilles touchées, on peut déterminer le nombre d'abeilles mortes.
  **On utilisera le paramètre letalite qui correspond à la capacité du pesticide à tuer une abeille, le taux_res et le taux_nres qui correspondent aux taux de resitance ou non au pesticides.**
   D'après notre definition la létalité est la proportion d'abeilles tuées sur la population d'abeilles non résistantes. En effet, la poûlation résistantes ne peut pas être tuées car elle resiste face au pesticide. En revanche la proportion de population non resistante va elle être sensible aux pesticides et mourir ou resister. C'est ce que l'on definit dans notres algorithme: 
@@ -180,7 +187,9 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
      '''
      
      
-     
+  
+   - [ ] Les abeilles touchées
+   - [x] Les abeilles mortes
   Au fur et à mesure, on fait évoluer le taux de résistance et le taux de non résistance à **+/- 1%**.
  Ainsi on a notre nouvelle population d'ouvrières calculée qu on recuperera dans notre nouvelle modélisation.
  
