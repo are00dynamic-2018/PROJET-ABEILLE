@@ -132,7 +132,7 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
 | -------------|:--------------------------------------------------------------------------------------:|-------------------:|
 | `alpha`      |proportion de la population resistante, qui resite                                      | réelle entre 0 et 1|
 | `taux_res`   |taux de resistance sur la population resistante                                         | réelle entre 0 et 1|
-| `taux_nres`  |taux de resistance sur la population non resistante ( :exclamation: taux_res>taux_nres )| réelle entre 0 et 1|
+| `taux_nres`  |taux de resistance sur la population non resistante (  taux_res>taux_nres )             | réelle entre 0 et 1|
   
   Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire , on distinguinguera les abeilles touchées resistantes et celles qui ne sont pas reistantes.
 A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles qui seront effectivement mortes ,chez les resistantes qui depend de leur taux de resistance et idem pour les non resistantes en y faisant intervenir la létalité ainsi qu'un paramètre aléatoire. 
