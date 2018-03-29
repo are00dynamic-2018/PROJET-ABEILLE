@@ -4,15 +4,15 @@
 https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 
 # Table des matières 
-- [Membre du groupe](#membres)  
-- [Description du projet ](#sujet)
-- [Modélisations mathématiques de la reproduction des abeilles](#doc_ref)  
-  - [Suite Fibonacci ](#Fibonacci)
+- [Membre du groupe  :honeybee:](#membres)  
+- [Description du projet  :honeybee:](#sujet)
+- [Modélisations mathématiques de la reproduction des abeilles  :honeybee:](#doc_ref)  
+  - [Suite Fibonacci   :sunflower:](#Fibonacci)
 
-- [Paramètres Pesticides](#ParamètresPest) 
-- [Paramètres Abeilles](#ParamètresAbeilles) 
+- [Paramètres Pesticides  :honeybee:](#ParamètresPest) 
+- [Paramètres Abeilles  :honeybee:](#ParamètresAbeilles) 
 
-- [Bibliographie](#Bibliographie)
+- [Bibliographie  :honeybee:](#Bibliographie)
 
 <a name="membres"/>
 # Membres du groupe :
