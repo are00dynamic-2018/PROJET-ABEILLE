@@ -13,7 +13,7 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
   - [Paramètres Pesticides   ](#ParamètresPest) 
   - [Paramètres Abeilles  ](#ParamètresAbeilles) 
   - [Modélisation  ](#Modelisation) 
-
+- [Etude de la dynamique du système](#EtudeDynamic)
 - [Bibliographie  ](#Bibliographie)
 
 <a name="membres"/>
@@ -130,11 +130,11 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
 
 | Paramètres   | Utilité                                                                                |   Variation        |
 | -------------|:--------------------------------------------------------------------------------------:|-------------------:|
-| `alpha`      |proportion de la population resistante, qui resite                                      | réelle entre 0 et 1|
+| `alpha`      |proportion de la population resistante, qui resiste                                      | réelle entre 0 et 1|
 | `taux_res`   |taux de resistance sur la population resistante                                         | réelle entre 0 et 1|
 | `taux_nres`  |taux de resistance sur la population non resistante (  taux_res>taux_nres )             | réelle entre 0 et 1|
   
-  Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire , on distinguinguera les abeilles touchées resistantes et celles qui ne sont pas reistantes.
+  Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire , on distinguinguera les abeilles touchées resistantes et celles qui ne sont pas résistantes.
 A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles qui seront effectivement mortes ,chez les resistantes qui depend de leur taux de resistance et idem pour les non resistantes en y faisant intervenir la létalité ainsi qu'un paramètre aléatoire. 
   Nous testerons ensuite la proportion des abeilles mortes par rapport aux abeilles touchées et celui-ci nous indiquera si les abeilles ont resistées ou pas ,en distinguant toujours les abeilles resistantes des non resistantes. En effet , si cette proportion est inférieure au seuil d'adaptation on en déduit que les abeilles ont dévellopés une resistance et donc le taux de resistance des abeilles.
 
@@ -142,11 +142,12 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
 ### Modelisation
 
   Dans notre modélisation, on considère que les "abeilles_touchees" représentent la populations femelles étant donné qu'elles sont les seules à sortir de la ruche, elles sont les seules à être touchées par le pesticides. 
-  POur la suite des explications, on parlera des abeilles ouvrières butineuses.
-  On etudira d'abord :
+  Pour la suite des explications, on parlera des abeilles ouvrières butineuses.
+
+On etudira d'abord :
 
   
-  D'après les paramètres sités ci-dessus, on peut calculer le nombre d'abeilles touchées. En effet on a **le nombre d'abeilles resistantes touchées** qui est alpha de porte du nombre de population totale d'ouvrière. En d'autre terme la portée de la population qui est touchée par le pesticude. On affinera à _**+/- 1%**_. **Le nombre d'abeilles non resistantse** est simplement le nombre total d'ouvrière moins le nombre  d'abeilles resistantes touchées, tours affiner à *+/- 1%*.
+  D'après les paramètres sités ci-dessus, on peut calculer le nombre d'abeilles touchées. En effet on a **le nombre d'abeilles resistantes touchées** qui est alpha de porte du nombre de population totale d'ouvrière. En d'autre terme la portée de la population qui est touchée par le pesticude. On affinera à _**+/- 1%**_. **Le nombre d'abeilles non resistantes** est simplement le nombre total d'ouvrières moins le nombre  d'abeilles resistantes touchées, tours affiner à *+/- 1%*.
   **Ici on a utilisé le paramètre alpha qui correspond à la proportion de la population qui résiste.**
    
     '''
@@ -170,7 +171,7 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
   
   A partir du nombre d'abeilles touchées, on peut déterminer le nombre d'abeilles mortes.
  **On utilisera le paramètre letalite qui correspond à la capacité du pesticide à tuer une abeille, le taux_res et le taux_nres qui correspondent aux taux de resistance des abeilles resistantes ou non.**
-  D'après notre definition la létalité est la proportion d'abeilles tuées sur la population d'abeilles non résistantes. En effet, la poûlation résistantes ne peut pas être tuées car elle resiste face au pesticide. En revanche la proportion de population non resistante va elle être sensible aux pesticides et mourir ou resister. C'est ce que l'on definit dans notres algorithme: 
+  D'après notre definition la létalité est la proportion d'abeilles tuées sur la population d'abeilles non résistantes. En effet, la population résistante ne peut pas être tuée car elle résiste face au pesticide. En revanche la proportion de population non resistante va elle être sensible aux pesticides et mourir ou resister. C'est ce que l'on definit dans notres algorithme: 
   
   
   
@@ -189,6 +190,19 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
    
   Au fur et à mesure, on fait évoluer le taux de résistance et le taux de non résistance à **+/- 1%**.
  Ainsi on a notre nouvelle population d'ouvrières calculée qu on recuperera dans notre nouvelle modélisation.
+ 
+### Transmission de la résistance dans la ruche
+  
+  On suppose à présent que la résistance des abeilles se transmet génétiquement. Dans notre fonction, nous calculons alpha, le taux d'abeilles résistantes, en le multipliant par le nombre d'ouvrières et en y ajoutant le produit du nombre de males par le nombre de d'ouvrières de l'élément -3 de List_oeufs. Puis on le divise à nouveau par le nombre d'ouvrières. Dans la liste d'oeufs, on mentionne également le alpha pour chaque élément de la liste, pour montrer l'évolution de la résistance de la ruche.
+  Dans la liste renvoyée, l'on affiche également la valeur entière de nb_ouvriere x alpha, qui montre alors le nombre d'ouvrières résistantes à chaque semaine.
+
+
+ 
+  <a name="EtudeDynamic"/>
+### Etude de la dynamique du système
+  
+  Après avoir modélisé l'évolution de la ruche sur plusieurs années en ayant ajouté le pesticide, nous étudions maintenant la dynamique du système en faisant varier les paramètres. Pour cela, nous ne représentons plus des courbes d'évolutions sur un graphique, mais bien une évolution en deux dimensions, à savoir avec l'adaptation et la portée en coordonnées. On fixe la létalité du pesticide ainsi que la proportion d'abeilles résistantes. On évalue, pour chaque valeur discrète d'adaptation et portée du graphique la survie ou non de la ruche au bout de 10 années, la survie représentée en bleue et la non-survie en rouge. Nous observons cette évolution pour différentes valeurs de létalité et de alpha.
+ 
  
  
 
