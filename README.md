@@ -99,7 +99,7 @@ On arrondit à une valeur entière pour simplifier les résultats.
 
   - Nous avons crée des fonctions qui permettent d'observer le comportement des abeilles sur plusieurs années :
 Notre fonction reproduction fonctionne de la façon suivante :
-  - Nous appelons population le tuple (nb_males, nb_ouvriere, reine) constitué du nombre de males, d'ouvrières et de la présence ou non de la reine. On crée une liste R, qui représente le nombre de males et de femelles au cours du temps. Le nombre de males et d'ouvrières morts correspond alors au premier tuple de la liste d'oeufs pondus, car chaque semaine, l'on décale d'un rang le nombres d'oeufs pondu jusqu'à 7 semaines (espérance de vie d'une abeille). On soustrait alors le nombre de males morts et d'ouvrières mortes au nombre de males et d'ouvrières.
+  - Nous appelons population le tuple (nb_males, nb_ouvriere, reine) constitué du nombre de males, d'ouvrières et de la présence ou non de la reine. On crée une liste R, qui représente le nombre de males et de femelles au cours du temps. Le nombre de males et d'ouvrières morts correspond alors au premier tuple de la liste d'oeufs pondus, car chaque semaine, l'on décale d'un rang le nombres d'oeufs pondu jusqu'à 7 semaines (espérance de vie d'une abeille). On soustrait alors le nombre dde males morts et d'ouvrières mortes au nombre de males et d'ouvrières.
   
 - Nous avons, par ailleurs, rajouté des causes de morts autres que la vieillesse, qui illustrent les aléas naturels (prédateurs, accidents,...)
 
@@ -193,21 +193,43 @@ On etudira d'abord :
      
 
    
-  Au fur et à mesure, on fait évoluer le taux de résistance et le taux de non résistance à **+/- 10%**.
+  Au fur et à mesure, on fait évoluer le taux de résistance et le taux de non résistance à **+/- 1%**.
  Ainsi on a notre nouvelle population d'ouvrières calculée qu on recuperera dans notre nouvelle modélisation.
 
   <a name="TransRes"/>
 ### Transmission de la résistance dans la ruche
   
-  On suppose à présent que la résistance des abeilles se transmet génétiquement. Dans notre fonction, nous calculons alpha, le taux d'abeilles résistantes, en le multipliant par le nombre d'ouvrières et en y ajoutant le produit du nombre de males par le nombre de d'ouvrières de l'élément -3 de List_oeufs. Puis on le divise à nouveau par le nombre d'ouvrières. Dans la liste d'oeufs, on mentionne également le alpha pour chaque élément de la liste, pour montrer l'évolution de la résistance de la ruche.
-  Dans la liste renvoyée, l'on affiche également la valeur entière de nb_ouvriere x alpha, qui montre alors le nombre d'ouvrières résistantes à chaque semaine.
-
-
+  On suppose à présent que la résistance des abeilles se transmet génétiquement. Ainsi, les oeufs pondus une certaine semaine possèdent la même proportion d'abeilles résistantes que pour la population totale cette semaine-là. Dans notre fonction,
+nous calculons d'abord un nouvel alpha, à partir d'une part des populations mortes dans la semaine et des populations naissantes trois semaines plus tôt, à savoir en prenant les abeilles résistantes et non résistantes qui sont mortes, puis en prenant le nombre d'ouvrières résistantes à la semaine concernée, et en y ajoutant le nombre d'abeilles résistantes parmi les oeufs pondus trois semaines auparavent, avant de diviser le nombre total obtenu par la population de la ruche. Puis on le divise à nouveau par le nombre d'ouvrières. Dans la liste d'oeufs, on mentionne également le alpha pour chaque élément de la liste, pour montrer l'évolution de la résistance de la ruche.
+  Dans la liste renvoyée par la fonction principales, l'on affiche également la valeur entière de nb_ouvriere x alpha, qui montre alors le nombre d'ouvrières résistantes à chaque semaine.
+  
+  Voici les lignes de code présentants ces modifications :
+  
+  ''' 
+  
+    def transmission(pop_init):
+ 
+     alpha=MaJ_alpha(alpha,res_m,nres_m,nb_ouvrieres)
+     
+     etc.  
+     
+     alpha=(alpha*nb_ouvrieres+List_oeuf[-3][2]*List_oeuf[-3][1])
+     
+     etc.
+     
+     if nb_ouvrieres!=0:
+        alpha=alpha/nb_ouvrieres
+     else:
+        alpha=0
+     
+     etc.
+    
+     '''
  
   <a name="EtudeDynamic"/>
 ### Etude de la dynamique du système
   
-  Après avoir modélisé l'évolution de la ruche sur plusieurs années en ayant ajouté le pesticide, nous étudions maintenant la dynamique du système en faisant varier les paramètres. Pour cela, nous ne représentons plus des courbes d'évolutions sur un graphique, mais bien une évolution en deux dimensions, à savoir avec l'adaptation et la portée en coordonnées. On fixe la létalité du pesticide ainsi que la proportion d'abeilles résistantes. On évalue, pour chaque valeur discrète d'adaptation et portée du graphique la survie ou non de la ruche au bout de 10 années, la survie représentée en bleue et la non-survie en rouge. Nous observons cette évolution pour différentes valeurs de létalité et de alpha.
+  Après avoir modélisé l'évolution de la ruche sur plusieurs années en ayant ajouté le pesticide, nous étudions maintenant la dynamique du système en faisant varier les paramètres. Pour cela, nous ne représentons plus des courbes d'évolutions sur un graphique, mais bien une évolution en deux dimensions, à savoir avec l'adaptation et la portée en coordonnées. On fixe la létalité du pesticide ainsi que la proportion alpha d'abeilles résistantes. On évalue, pour chaque valeur discrète d'adaptation et portée du graphique la survie ou non de la ruche au bout de 10 années, la survie représentée en bleue et la non-survie en rouge. Nous observons cette évolution pour différentes valeurs de létalité et de alpha.
  
  
  
