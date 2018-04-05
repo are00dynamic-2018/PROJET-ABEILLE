@@ -99,7 +99,7 @@ On arrondit à une valeur entière pour simplifier les résultats.
 
   - Nous avons crée des fonctions qui permettent d'observer le comportement des abeilles sur plusieurs années :
 Notre fonction reproduction fonctionne de la façon suivante :
-  - Nous appelons population le tuple (nb_males, nb_ouvriere, reine) constitué du nombre de males, d'ouvrières et de la présence ou non de la reine. On crée une liste R, qui représente le nombre de males et de femelles au cours du temps. Le nombre de males et d'ouvrières morts correspond alors au premier tuple de la liste d'oeufs pondus, car chaque semaine, l'on décale d'un rang le nombres d'oeufs pondu jusqu'à 7 semaines (espérance de vie d'une abeille). On soustrait alors le nombre dde males morts et d'ouvrières mortes au nombre de males et d'ouvrières.
+  - Nous appelons population le tuple (nb_males, nb_ouvriere, reine) constitué du nombre de males, d'ouvrières et de la présence ou non de la reine. On crée une liste R, qui représente le nombre de males et de femelles au cours du temps. Le nombre de males et d'ouvrières morts correspond alors au premier tuple de la liste d'oeufs pondus, car chaque semaine, l'on décale d'un rang le nombres d'oeufs pondu jusqu'à 7 semaines (espérance de vie d'une abeille). On soustrait alors le nombre de males morts et d'ouvrières mortes au nombre de males et d'ouvrières.
   
 - Nous avons, par ailleurs, rajouté des causes de morts autres que la vieillesse, qui illustrent les aléas naturels (prédateurs, accidents,...)
 
