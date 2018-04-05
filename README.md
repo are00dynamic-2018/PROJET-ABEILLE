@@ -193,7 +193,7 @@ On etudira d'abord :
      
 
    
-  Au fur et à mesure, on fait évoluer le taux de résistance et le taux de non résistance à **+/- 1%**.
+  Au fur et à mesure, on fait évoluer le taux de résistance et le taux de non résistance à **+/- 10%**.
  Ainsi on a notre nouvelle population d'ouvrières calculée qu on recuperera dans notre nouvelle modélisation.
 
   <a name="TransRes"/>
