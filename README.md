@@ -151,7 +151,7 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
 On etudira d'abord :
 
   
-  D'après les paramètres sités ci-dessus, on peut calculer le nombre d'abeilles touchées. En effet on a **le nombre d'abeilles resistantes touchées** qui est alpha de porte du nombre de population totale d'ouvrière. En d'autre terme la portée de la population qui est touchée par le pesticude. On affinera à _**+/- 1%**_. **Le nombre d'abeilles non resistantes** est simplement le nombre total d'ouvrières moins le nombre  d'abeilles resistantes touchées, tours affiner à *+/- 1%*.
+  D'après les paramètres sités ci-dessus, on peut calculer le nombre d'abeilles touchées. En effet on a **le nombre d'abeilles resistantes touchées** qui est alpha de porte du nombre de population totale d'ouvrière. En d'autre terme la portée de la population qui est touchée par le pesticude. On affinera à _**+/- 10%**_. **Le nombre d'abeilles non resistantes** est simplement le nombre total d'ouvrières moins le nombre  d'abeilles resistantes touchées, tours affiner à *+/- 10%*.
   **Ici on a utilisé le paramètre alpha qui correspond à la proportion de la population qui résiste.**
    
     '''
