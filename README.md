@@ -50,6 +50,8 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
   En effet , on remarque que la population d'une ruche peut être modelisée par la suite de _**Fibonacci**._ étant donné qu'à chaque génération , les nombres de femelles et de mâles sont deux nombres consécutifs de cette suite. On peut démontrer mathématiquement que la limite du rapport entre **F_(n+1) et F_n est le nombre d'or (~1,618)**.On comprend donc que le rapport entre les mâle et femelles est environ égale au nombre d'or. Et étant donné qu'on parle d'une ruche qui possède au minimum 10 000 abeilles (soit 4000 mâles et 6000 femelles environ) , c'est à dire environ F_19 et F_20 le rapport entre les deux est assez proche pour approximer dans notre modèle, l'évolution de la population en se servant du coefficient du nombre d'or plutôt que de definir la suite en elle-même qui demanderait beaucoup plus de puissance à notre ordinateur.
    
 ![image](http://www.lenombredor.free.fr/nature_fichiers/image021.jpg)
+Cette image est issue du site suivant :
+http://www.lenombredor.free.fr/nature_fichiers/image021.jpg
 
   - Nous avons pris en compte le fait qu'après la ponte , les oeufs éclosent au bout de 3 semaines à peu près.
   - Nous avons pris en compte la mort des abeilles qui vient ,après éclosion, environ 7 semaines (en y appliquant un facteur aléatoire) et on a pris en compte la mort d'abeilles par des prédateurs avec aussi un facteur aléatoire qui sera plus élevé pour les ouvrières car ce sont elles qui sortent de la ruche et donc qui ont le plus de risques de mourrir.
@@ -59,7 +61,8 @@ https://are00dynamic-2018.github.io/PROJET-ABEILLE/
 - On sait que la ponte des oeufs dépend aussi de la période de l'année , on s'est donc basé sur une courbe empirique de celle-ci pour trouver une fonction l'approchant en choisissant d'observer l'évolution d'une population d'abeilles de Provence On a donc approximé la courbe des pontes en fonction de la période de l'année par un polynôme de degré 4.
 
 ![Image](http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi)
-
+Cette image est issu du site suivant :
+http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi
 
 Voilà la ligne de code modélisant le nombre d'oeufs par semaines avant et après 14 semaines. :
 
@@ -78,7 +81,7 @@ Voilà la ligne de code modélisant le nombre d'oeufs par semaines avant et apr�
   En revanche, si le nombre de semaine est supréieur à 14, alors les abeilles pondront un nombre d'oeufs égal à (0.3906 x k⁴)+(-31.539 x k³)+(929 x k²)+(-11826 x k)+55718.
 On arrondit à une valeur entière pour simplifier les résultats.
 
-  En réalité, ce n'est pas cette fonction-là que nous utilisons, mais plutôt celle-ci qui utilise des intégrales :
+  Afin d'obtenir un résultat à partir d'une fonction continue et non des valeurs discrètes, on utilise l'aire sous la courbe de cette formule, avec les formules d'intégrales, donc de primitives des fonctions précédentes.
 
 
     '''
