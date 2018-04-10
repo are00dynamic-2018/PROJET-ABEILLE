@@ -59,7 +59,7 @@ http://www.lenombredor.free.fr/nature_fichiers/image021.jpg
 
      > Notes:la durée de vie varie aussi en fonction de la période en réalité pour les ouvrières 13 à 38 jours en été , 30 à 60 jours au printemps , environ 140 jours en hiver et pour les mâles de 21 à 32 jours au printemps et le début de l’été et jusqu’à 90 jours à la fin de l’été et en automne .
      
-- On sait que la ponte des oeufs dépend aussi de la période de l'année , on s'est donc basé sur une courbe empirique de celle-ci pour trouver une fonction l'approchant en choisissant d'observer l'évolution d'une population d'abeilles de Provence On a donc approximé la courbe des pontes en fonction de la période de l'année par un polynôme de degré 4.
+- On sait que la ponte des oeufs dépend aussi de la période de l'année , on s'est donc basé sur une courbe empirique de celle-ci pour trouver une fonction l'approchant en choisissant d'observer l'évolution d'une population d'abeilles de Provence On a donc approximé la courbe des pontes en fonction de la période de l'année par deux polynôme de degré 4 continus en 14.
 
 ![Image](http://nicolas.blogs.com/.a/6a00d83455b58069e20115721bba3b970b-pi)
 Cette image est issu du site suivant :
@@ -152,7 +152,7 @@ A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles
 On etudira d'abord :
 
   
-  D'après les paramètres sités ci-dessus, on peut calculer le nombre d'abeilles touchées. En effet on a **le nombre d'abeilles resistantes touchées** qui est alpha de porte du nombre de population totale d'ouvrière. En d'autre terme la portée de la population qui est touchée par le pesticude. On affinera à _**+/- 10%**_. **Le nombre d'abeilles non resistantes** est simplement le nombre total d'ouvrières moins le nombre  d'abeilles resistantes touchées, tours affiner à *+/- 10%*.
+  D'après les paramètres sités ci-dessus, on peut calculer le nombre d'abeilles touchées. En effet on a **le nombre d'abeilles resistantes touchées** qui est alpha de porte du nombre de population totale d'ouvrière. En d'autre terme la portée de la population qui est touchée par le pesticude. On affinera à _**+/- 10%**_. **Le nombre d'abeilles non resistantes** est simplement le nombre total d'ouvrières moins le nombre  d'abeilles resistantes touchées, toujours affiner à *+/- 10%*.
   **Ici on a utilisé le paramètre alpha qui correspond à la proportion de la population qui résiste.**
    
     '''
