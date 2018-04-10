@@ -117,9 +117,9 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
 
 | Paramètres     | Utilité                                                                          |   Variation          |
 | ---------------|:--------------------------------------------------------------------------------:|---------------------:|
-| `létalité`     |la capacité du pesticide à tuer l'abeille i.e la facilité du pesticide à tuer     | réelle entre 0.5 et 1|
-| `adaptation`   |la capacité des abeilles à resister au pesticide                                  | réelle entre 0 et 1  |
-| `portée`       |la capacité à atteindre une abeille avec le pesticide                             | réelle entre 0 et 1  |
+| `létalité`     |la capacité du pesticide à tuer l'abeille i.e la facilité du pesticide à tuer     | réel entre 0.5 et 1  |
+| `adaptation`   |la capacité des abeilles à resister au pesticide                                  | réel entre 0 et 1    |
+| `portée`       |la capacité à atteindre une abeille avec le pesticide                             | réel entre 0 et 1    |
    
    Le pesticide depend de ses trois paramètres. Dans notres programme, le pesticide est un tuple caractérisée par ses trois paramètres :
     
@@ -135,9 +135,9 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
 
 | Paramètres   | Utilité                                                                                |   Variation        |
 | -------------|:--------------------------------------------------------------------------------------:|-------------------:|
-| `alpha`      |proportion de la population resistante, qui resiste                                      | réelle entre 0 et 1|
-| `taux_res`   |taux de resistance sur la population resistante                                         | réelle entre 0 et 1|
-| `taux_nres`  |taux de resistance sur la population non resistante (  taux_res>taux_nres )             | réelle entre 0 et 1|
+| `alpha`      |proportion de la population resistante, qui resiste                                     | réel entre 0 et 1  |
+| `taux_res`   |taux de resistance sur la population resistante                                         | réel entre 0 et 1  |
+| `taux_nres`  |taux de resistance sur la population non resistante (  taux_res>taux_nres )             | réel entre 0 et 1  |
   
   Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire , on distinguinguera les abeilles touchées resistantes et celles qui ne sont pas résistantes.
 A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles qui seront effectivement mortes ,chez les resistantes qui depend de leur taux de resistance et idem pour les non resistantes en y faisant intervenir la létalité ainsi qu'un paramètre aléatoire. 
