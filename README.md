@@ -117,9 +117,9 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
 
 | Paramètres     | Utilité                                                                          |   Variation          |
 | ---------------|:--------------------------------------------------------------------------------:|---------------------:|
-| `létalité`     |la capacité du pesticide à tuer l'abeille i.e la facilité du pesticide à tuer     | réel entre 0.5 et 1  |
-| `adaptation`   |la capacité des abeilles à resister au pesticide                                  | réel entre 0 et 1    |
-| `portée`       |la capacité à atteindre une abeille avec le pesticide                             | réel entre 0 et 1    |
+| `létalité`     |la capacité du pesticide à tuer l'abeille i.e la facilité du pesticide à tuer     | réelle entre 0.5 et 1|
+| `adaptation`   |la capacité des abeilles à resister au pesticide                                  | réelle entre 0 et 1  |
+| `portée`       |la capacité à atteindre une abeille avec le pesticide                             | réelle entre 0 et 1  |
    
    Le pesticide depend de ses trois paramètres. Dans notres programme, le pesticide est un tuple caractérisée par ses trois paramètres :
     
@@ -135,9 +135,9 @@ On définit 3 paramètres pour le pesticide et 3 paramètre pour les abeilles qu
 
 | Paramètres   | Utilité                                                                                |   Variation        |
 | -------------|:--------------------------------------------------------------------------------------:|-------------------:|
-| `alpha`      |proportion de la population resistante, qui resiste                                     | réel entre 0 et 1  |
-| `taux_res`   |taux de resistance sur la population resistante                                         | réel entre 0 et 1  |
-| `taux_nres`  |taux de resistance sur la population non resistante (  taux_res>taux_nres )             | réel entre 0 et 1  |
+| `alpha`      |proportion de la population resistante, qui resiste                                      | réelle entre 0 et 1|
+| `taux_res`   |taux de resistance sur la population resistante                                         | réelle entre 0 et 1|
+| `taux_nres`  |taux de resistance sur la population non resistante (  taux_res>taux_nres )             | réelle entre 0 et 1|
   
   Il s'agira de définir une fonction qui renverra le nombre d'abeilles touchées qui prendra en compte la portée ainsi qu'un paramètre aléatoire , on distinguinguera les abeilles touchées resistantes et celles qui ne sont pas résistantes.
 A partir de ces abeilles touchées , on prélèvera un certain nombre d'abeilles qui seront effectivement mortes ,chez les resistantes qui depend de leur taux de resistance et idem pour les non resistantes en y faisant intervenir la létalité ainsi qu'un paramètre aléatoire. 
@@ -202,7 +202,6 @@ On etudira d'abord :
   On suppose à présent que la résistance des abeilles se transmet génétiquement. Ainsi, les oeufs pondus une certaine semaine possèdent la même proportion d'abeilles résistantes que pour la population totale cette semaine-là. Dans notre fonction,
 nous calculons d'abord un nouvel alpha, à partir d'une part des populations mortes dans la semaine et des populations naissantes trois semaines plus tôt, à savoir en prenant les abeilles résistantes et non résistantes qui sont mortes, puis en prenant le nombre d'ouvrières résistantes à la semaine concernée, et en y ajoutant le nombre d'abeilles résistantes parmi les oeufs pondus trois semaines auparavent, avant de diviser le nombre total obtenu par la population de la ruche. Puis on le divise à nouveau par le nombre d'ouvrières. Dans la liste d'oeufs, on mentionne également le alpha pour chaque élément de la liste, pour montrer l'évolution de la résistance de la ruche.
   Dans la liste renvoyée par la fonction principales, l'on affiche également la valeur entière de nb_ouvriere x alpha, qui montre alors le nombre d'ouvrières résistantes à chaque semaine.
-  
   Voici les lignes de code présentants ces modifications :
   
   ''' 
@@ -229,8 +228,7 @@ nous calculons d'abord un nouvel alpha, à partir d'une part des populations mor
   <a name="EtudeDynamic"/>
 ### Etude de la dynamique du système
   
-  Après avoir modélisé l'évolution de la ruche sur plusieurs années en ayant ajouté le pesticide, nous étudions maintenant la dynamique du système en faisant varier les paramètres. Pour cela, nous ne représentons plus des courbes d'évolutions sur un graphique, mais bien une évolution en deux dimensions, à savoir avec l'adaptation et la portée en coordonnées. On fixe la létalité du pesticide ainsi que la proportion alpha d'abeilles résistantes. On évalue, pour chaque valeur discrète d'adaptation et portée du graphique la survie ou non de la ruche au bout de 10 années, la survie représentée en bleue et la non-survie en rouge. Nous observons cette évolution pour différentes valeurs de létalité et de alpha.
- 
+  Après avoir modélisé l'évolution de la ruche sur plusieurs années en ayant ajouté le pesticide, nous étudions maintenant la dynamique du système en faisant varier les paramètres. Pour cela, nous ne représentons plus des courbes d'évolutions sur un graphique, mais bien une évolution en deux dimensions, à savoir avec l'adaptation et la portée en coordonnées. On fixe la létalité du pesticide ainsi que la proportion alpha d'abeilles résistantes. On évalue, pour chaque valeur discrète d'adaptation et portée du graphique la survie ou non de la ruche au bout de 10 années, la survie représentée en bleue et la non-survie en rouge. Nous observons cette évolution pour différentes valeurs de létalité et de alpha. Nous avons pour cela fait tourner notre programme un nombre de fois suffisant pour pouvoir obtenir toutes les captures d'écran. Quand la létalité augmente, plus la ruche meurt quand la portée est grande et l'adaptation petite. On remarque cependant que les grandes portées aident les ruches à s'adapter, ce qui entraîne une légère "remontée" des ruches vivantes pour les grandes portées et petites adaptations, quand la létalité augmente. De même, on remarque que plus alpha augmente, pour une létalité fixée, plus la ruche survie pour les grandes portées et petites adaptations.
  
  
 
